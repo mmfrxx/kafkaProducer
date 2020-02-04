@@ -14,7 +14,6 @@ public class KafkaProducerController {
     @Autowired
     KafkaProducerService kafkaProducerService;
 
-
     @RequestMapping(value = "/publishUser", method = RequestMethod.POST, consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
     public ResponseEntity<String> publishMessage(User user){
         kafkaProducerService.sendUser(user);

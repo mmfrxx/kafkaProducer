@@ -19,7 +19,6 @@ public class ProducerConfiguration {
 
     @Value("${kafka.bootstrap-servers}")
     private String bootstrapServers;
-    //private String bootstrapServers = "85.159.27.146:9092";
 
     @Bean
     public Map<String, Object> prodConfig(){
